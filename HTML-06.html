@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - 06</title>
+</head>
+<body>
+    <form action="">
+        <!--
+
+          Form
+            - An HTML form is used to collect users Input.
+            - It is represented by <frame> tag containing different types of input elements in it.
+            - Action attribute helps the form to redirect the page to another, if sumbmitted through the button
+              in th form.
+        -->
+              <style>
+                #name{
+
+                }
+              </style>
+
+              <label for="name">Name</label>
+              <!--
+                 Lable Tag:
+                    - A label tag is used to disclose a text in the form, reffering to the input field.
+                    - "for" key in attribute is mapped with the input element's id to find the respective
+                       field to it.
+              -->
+               <input type="text"  id="name"    placeholder="Full Name">
+
+               <!--
+
+                INPUT TAG
+                  - Having an input field to store the user's data.
+                  - Default input is of 'text' type
+                  - Attributes:
+                    - required: Makes the input field mandatory
+                    - disabled: Makes the input field inactive
+                    - checked: Makes the selected checkbox checked
+                    - placeholder: Helps the user to understand about an input field.
+                 - Types
+                   - Text (default state)
+                   -date
+                   password
+                   email
+                   color
+                   url
+                   time
+                   dataime
+                   radio
+                   buttons
+                   -Sumbmit
+                   - Reset
+
+               -->
+
+               <br><br>
+
+            <label for="num">Ph-no Number</label>
+            <input type="number" id="num" placeholder="phone Number" max="99">
+            
+              <br><br>
+
+            <label for="num">Date of Birth</label>
+            <input type="date" id="date" placeholder="date of birth" >
+              
+                <br><br>
+            
+            <label for="pass">Password<span style="color: red; font-size: 15px;">*</span></label>
+            <input type="password" id="pass" required placeholder="Password" >
+                
+                  <br><br>
+
+            <label for="mail">Email</label>
+            <input type="email" id="mail" placeholder="Email">
+
+                  <br><br>
+            <label>Gender:</label>
+                <input type="radio" name="Gender" id="male" value="Male">
+                   <label for="male">Male</label>
+                <input type="radio" name="Gender" id="female" value="Female">
+                   <label for="female">Female</label>
+                <input type="radio" name="gender" id="others" value="Other">
+                    <label for="others">Others</label>
+
+                <br><br>
+
+                <label for="lang">Language:</label>
+                <input type="checkbox" name="language" id="eng" value="English">
+                   <label for="eng">MEnglish</label>
+                <input type="checkbox" name="language" id="hin" value="Hindi">
+                   <label for="hin">Hindi</label>
+                <input type="checkbox" name="language" id="beng" value="Bengali">
+                    <label for="beng">Bengali</label>
+                <input type="checkbox" name="language" id="tam" value="tamil">
+                    <label for="tam">Tamil</label>
+    
+  
+               <br><br>
+               <label for="count">Country:</label>
+               <select id="count">
+                <option selected disabled>Please select a Country</option>
+                <option value="India">India</option>
+                <option value="Australia">Australia</option>
+                <option value="Nepal">Nepal</option>
+                <option value="Egypt">Egypt</option>
+                
+               </select>
+
+               <br> <br>
+            
+               <button>Submit-btn</button>
+
+               <input type="sumbit" value="Sumbit-inp">
+
+               <input type="reset" value="reset">
+
+    </form>
+    
+</body>
+</html>
